@@ -1,4 +1,4 @@
-## Product Requirements Document (PRD) for Research Paper Reading AI
+## Research Paper Reading AI - PRD
 
 ### Purpose
 
