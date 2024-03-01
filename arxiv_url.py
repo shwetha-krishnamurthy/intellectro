@@ -37,8 +37,7 @@ def get_papers_from_arXiv(query, n):
         papers = []
 
     # Print the result or do further processing
-    for paper in papers:
-        print(paper)
+    return(papers)
 
 
 if __name__ == "__main__":
