@@ -62,24 +62,6 @@ Given the constraint of a 3-week timeline, the focus is towards creating a Minim
 3. **Manual Calibration of Understanding Levels**: Instead of an automated calibration system, provide users with a simple option to choose their preferred summarization level (basic, intermediate, advanced) without integrating external profiles.
 4. **Static Citation Information**: For the MVP, instead of summarizing citations within the papers, provide a list of cited works with links where users can access them if interested.
 
-### Timeline and Milestones
-
-**Week 1: Planning and Initial Development**
-- Days 1-2: Finalize the MVP features and scope.
-- Days 3-5: Begin development of the natural language search functionality.
-- Weekend: Start preliminary work on the summarization tool.
-
-**Week 2: Core Feature Development**
-- Days 1-3: Continue development of the search and summarization features.
-- Days 4-5: Implement the manual calibration feature for summarization levels.
-- Weekend: Develop the static citation information feature.
-
-**Week 3: Testing, Refinement, and Launch**
-- Days 1-2: Conduct internal testing of the MVP to identify and fix bugs.
-- Days 3-4: Refine the UI and user experience based on initial feedback.
-- Day 5: Final preparations for launch.
-- Weekend: Launch the MVP and collect user feedback.
-
 ### Risk Management and Future Considerations
 
 - **Quality and Relevance**: The basic natural language search and summarization may not meet all user expectations. Collect feedback for future improvements.
