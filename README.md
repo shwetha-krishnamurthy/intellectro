@@ -1,5 +1,7 @@
 ## Research Paper Reading AI - PRD
 
+#### Try it out here: https://intellectro.streamlit.app/
+
 ### Purpose
 
 The main goal of the Research Paper Reading AI is to assist users in understanding research papers, save time on finding relevant papers, and keep track of citations.

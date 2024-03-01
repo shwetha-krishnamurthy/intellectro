@@ -1,7 +1,3 @@
-transformers
-torch
-pycuda
-accelerate
-torch torchvision -f https://download.pytorch.org/whl/torch_stable.html
-pyPDF2
+pandas
+numpy
 streamlit
