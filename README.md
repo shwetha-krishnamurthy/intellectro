@@ -1,6 +1,6 @@
 ## Research Paper Reading AI - PRD
 
-#### Try it out here: https://intellectro.streamlit.app/
+#### Try v0.0.1 here: https://intellectro.streamlit.app/
 
 ### Purpose
 
