@@ -19,7 +19,7 @@ def get_query_explanation(query, expertise_level):
     paper_summary_pairs = ''
     for ct, paper in enumerate(papers):
         data += paper["summary"]
-        paper_summary_pairs += f"Paper Title {ct + 1}: {paper["title"]}; Summary: {paper["summary"]}"
+        paper_summary_pairs += f"Paper Title {ct + 1}: {paper['title']}; Summary: {paper['summary']}"
 
     data = data.replace("\n", " ")
 
