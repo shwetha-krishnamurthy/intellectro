@@ -23,7 +23,7 @@ def get_query_explanation(query, expertise_level):
 
     data = data.replace("\n", " ")
 
-    headers = {"Authorization": f"{os.environ["EDEN_AI_API_KEY"]}"}
+    headers = {"Authorization": f"{os.environ['EDEN_AI_API_KEY']}"}
 
     url = "https://api.edenai.run/v2/text/chat"
     payload = {
