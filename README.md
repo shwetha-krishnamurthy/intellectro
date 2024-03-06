@@ -1,4 +1,4 @@
-## Research Paper Reading AI - PRD
+## Intellectro - Research Paper Reading AI
 
 #### Try v0.0.1 here: https://intellectro.streamlit.app/
 
