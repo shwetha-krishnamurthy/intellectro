@@ -1,3 +1,6 @@
 pandas
 numpy
 streamlit
+openai
+langchain
+pinecone-client==3.1.0
