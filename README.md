@@ -25,6 +25,12 @@ My budget constraints have:
 
 I hope to overcome constraints in the future and that I'm able to add all the features described in detail below.
 
+#### TODO
+🔲Create embeddings of just the summaries and not the whole paper (Allows for more papers this  way)
+🔲Search on the summaries
+🔲Fetch the best match paper from arXiv
+🔲Summarize it
+
 ### Users
 
 - **Noobs**: Individuals new to the field of research or students beginning to explore academic papers.
