@@ -6,6 +6,25 @@
 
 The main goal of the Research Paper Reading AI is to assist users in understanding research papers, save time on finding relevant papers, and keep track of citations.
 
+### How does this work?
+
+#### Index Creation:
+1. Created word embeddings using Eden AI's API of 10 papers from arXiv on 1 topic (LLMs)
+2. Built a Pinecone index out of it
+
+Note: I'm on a student budget so I only created embeddings of 10 papers. Ideal case would be storing all of arXiv with constant updates.
+
+#### Querying
+1. Whenever someone queries for a topic, this converts that query into an embedding, once again using Eden's API
+2. Then it searches the Pinecone index for the best match
+3. The best match is then summarized, mainly covering the problem, assumptions, methodology, and the results of the paper
+
+My budget constraints have:
+1. Restricted the search space by a lot. See note above.
+2. Reduced the context window which makes it hard to track citations on a paper.
+
+I hope to overcome constraints in the future and that I'm able to add all the features described in detail below.
+
 ### Users
 
 - **Noobs**: Individuals new to the field of research or students beginning to explore academic papers.

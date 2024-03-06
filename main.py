@@ -10,7 +10,7 @@ def main():
 
     # API Key input (masked)
     # API Key
-    eden_ai_api_key = st.text_input("Enter EdenAI API Key (required):", type='password')
+    eden_ai_api_key = st.text_input("Enter EdenAI API Key (required; Click here to create one: https://www.edenai.co/):", type='password')
     
     pinecone_api_key = st.text_input("Enter Pinecone API Key (required):", type='password')
 
