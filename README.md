@@ -1,4 +1,4 @@
-## Intellectro - Research Paper Reading AI
+## Intellectro - Simplifying Research
 
 #### Try v0.0.1 here: https://intellectro.streamlit.app/
 
