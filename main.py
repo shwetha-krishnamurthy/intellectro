@@ -6,7 +6,7 @@ from search_research_paper import get_summary, search_papers
 def main():
     # Title
     st.title("Intellectro")
-    st.write("Get an explanation of any research paper")
+    st.write("Simplifying Literature Review")
 
     # API Key input (masked)
     # API Key
