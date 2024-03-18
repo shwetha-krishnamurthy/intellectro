@@ -11,7 +11,7 @@ def get_data_from_api(api_url):
   
   contents = reader._get_page(0).extract_text()
 
-  for i in range(5):
+  for i in count:
     contents += reader._get_page(i).extract_text()
 
   return contents
