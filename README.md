@@ -1,6 +1,6 @@
 ## Intellectro - Simplifying Research
 
-#### Try v0.0.1 here: https://intellectro.streamlit.app/
+#### Try v1.0 here: https://intellectro.streamlit.app/
 
 ### Purpose
 
@@ -26,10 +26,10 @@ My budget constraints have:
 I hope to overcome constraints in the future and that I'm able to add all the features described in detail below.
 
 #### TODO
-🔲Create embeddings of just the summaries and not the whole paper (Allows for more papers this  way)\
-🔲Search on the summaries\
-🔲Fetch the best match paper from arXiv\
-🔲Summarize it
+![](https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png) Create embeddings of just the summaries and not the whole paper (Allows for more papers this  way)\
+![](https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png) Search on the summaries\
+![](https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png) Fetch the best match paper from arXiv\
+![](https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png) Summarize it
 
 ### Users
 
