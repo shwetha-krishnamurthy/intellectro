@@ -6,7 +6,7 @@ import requests
 from pinecone import Pinecone, ServerlessSpec
 import arxiv_url
 
-NUM_RESULTS = 10
+NUM_RESULTS = 100
 
 def get_embedding(texts):
     url = "https://api.edenai.run/v2/text/embeddings"
@@ -36,16 +36,19 @@ def construct_embedding_dict(query):
     print("Retrieved papers from arXiv")
 
     documents = []
+    count = 0
     for paper in papers:
+        count += 1
         print("Collecting data from PDFs")
-        r = requests.get(paper["link"])
-        pdf_file = io.BytesIO(r.content)
-        pdfReader = PyPDF2.PdfReader(pdf_file)
-        count = len(pdfReader.pages)
-        texts = []
-        for i in range(count):
-            page = pdfReader.pages[i]
-            texts.append(page.extract_text())
+        # r = requests.get(paper["link"])
+        # pdf_file = io.BytesIO(r.content)
+        # pdfReader = PyPDF2.PdfReader(pdf_file)
+        # count = len(pdfReader.pages)
+        # texts = []
+        # for i in range(count):
+        #     page = pdfReader.pages[i]
+        #     texts.append(page.extract_text())
+        texts = [paper["summary"]]
             
         embedding = get_embedding(texts)
         documents.append({"id": f"paper{count}",

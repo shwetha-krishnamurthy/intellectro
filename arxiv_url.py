@@ -10,6 +10,7 @@ def get_papers_from_arXiv(query, n):
 
     # Check if the request was successful
     if response.status_code == 200:
+        print("Call was successful")
         # Parse the XML response
         root = ET.fromstring(response.content)
 
@@ -29,7 +30,6 @@ def get_papers_from_arXiv(query, n):
                 'authors': [author.find('arxiv:name', namespace).text for author in entry.findall('arxiv:author', namespace)],
                 'link': entry.find('arxiv:link[@title="pdf"]', namespace).attrib['href'] if entry.find('arxiv:link[@title="pdf"]', namespace) is not None else None
             }
-            
             # Add the paper dictionary to the list
             papers.append(paper_dict)
     else:
