@@ -2,8 +2,9 @@ import os
 import json
 import requests
 import create_vector_store
-import arxiv_api
+import arxiv_url
 from pinecone import Pinecone
+
 
 def search_papers(query):
     pc = Pinecone(
@@ -12,12 +13,12 @@ def search_papers(query):
     index = pc.Index(name='research-papers')
     query_embedding = create_vector_store.get_embedding([query])
     search_results = index.query(vector=query_embedding, 
-                                 top_k = 1,
+                                 top_k = 5,
                                  include_metadata=True)
     return search_results["matches"]
 
-def get_summary(matches):
-    paper_full_text = arxiv_api.get_data_from_api(matches[0]['id'])
+def get_summary(paper_id):
+    paper_full_text = arxiv_url.get_data_from_api(paper_id)
 
     headers = {"Authorization": f"{os.environ['EDEN_AI_API_KEY']}"}
 
