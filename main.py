@@ -18,7 +18,7 @@ def main():
     # os.environ['PINECONE_API_KEY'] = pinecone_api_key
 
     # User input for the research paper's title
-    paper_title = st.text_input("Enter the research paper title you want to understand:")
+    paper_title = st.text_input("Enter the area of research you want to understand:")
 
     # Expertise level selection
     # expertise_level = st.selectbox("Choose your expertise level on the topic you are searching for", ["No Experience", "I know somethings", "I'm a researcher in this field"])
@@ -28,7 +28,7 @@ def main():
         if paper_title and eden_ai_api_key: # and pinecone_api_key:
             # Generating the summary based on the API key, paper title, and expertise level
             # explanation = query_explanation.get_query_explanation(paper_title, expertise_level)
-            explanation = get_summary(search_papers("Large Language Models"))
+            explanation = get_summary(search_papers(paper_title))
 
             # Displaying the summary
             st.markdown(explanation, unsafe_allow_html=True)
