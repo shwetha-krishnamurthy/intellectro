@@ -1,4 +1,4 @@
-## Intellectro - Simplifying Research
+## Intellectro - Simplifying Research Using RAG
 
 #### Try v1.0 here: https://intellectro.streamlit.app/
 
